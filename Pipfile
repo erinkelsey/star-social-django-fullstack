@@ -9,6 +9,8 @@ autopep8 = "*"
 [packages]
 django = "*"
 django-bootstrap3 = "*"
+misaka = "*"
+django-braces = "*"
 
 [requires]
 python_version = "3.9"

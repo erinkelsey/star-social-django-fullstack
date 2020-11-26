@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/master.css'%}">
+    <link rel="stylesheet" href="{% static 'star_social/css/master.css'%}">
 
   </head>
   <body>
@@ -33,12 +33,12 @@
 
         <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
-            <li><a href="">Post</a></li>
-            <li><a href="">Groups</a></li>
-            <li><a href="">Create Group</a></li>
+            <li><a href="{% url 'posts:create' %}">Post</a></li>
+            <li><a href="{% url 'groups:all' %}">Groups</a></li>
+            <li><a href="{% url 'groups:create' %}">Create Group</a></li>
             <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
           {% else %}
-            <li><a href="">Groups</a></li>
+            <li><a href="{% url 'groups:all' %}">Groups</a></li>
             <li><a href="{% url 'accounts:login' %}">Login</a></li>
             <li><a href="{% url 'accounts:signup' %}">Sign Up</a></li>
           {% endif %}
@@ -54,5 +54,8 @@
     </div>
     <!-- ./ Page Content -->
 
+    <canvas id="canvas"></canvas>
+
   </body>
+  <script type="text/javascript" src="{% static 'star_social/js/master.js' %}"></script>
 </html>

@@ -1,0 +1,14 @@
+{% extends 'posts/post_base.html' %}
+{% load bootstrap3 %}
+
+
+{% block post_content %}
+  <h4>Create New Post</h4>
+
+  <form action="{% url 'posts:create' %}" method="post" id="postForm">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <button class="btn btn-primary btn-large" type="submit">Post</button>
+  </form>
+{% endblock %}
+  
