@@ -25,9 +25,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '0uf74w8qprc!)#s$6o8b@e&*e3-kgb2in630&sqqa8@u8#e0hn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://star-social-django-fullstack.herokuapp.com/']
+ALLOWED_HOSTS = ['star-social-django-fullstack.herokuapp.com']
 
 
 # Application definition
