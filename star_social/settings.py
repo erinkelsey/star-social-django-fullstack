@@ -27,7 +27,7 @@ SECRET_KEY = '0uf74w8qprc!)#s$6o8b@e&*e3-kgb2in630&sqqa8@u8#e0hn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://star-social-django-fullstack.herokuapp.com/']
 
 
 # Application definition
