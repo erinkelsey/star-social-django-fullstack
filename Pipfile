@@ -11,6 +11,9 @@ django = "*"
 django-bootstrap3 = "*"
 misaka = "*"
 django-braces = "*"
+psycopg2-binary = "*"
+gunicorn = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.9"

@@ -2,7 +2,7 @@
 
 Fullstack Django social media app implemented using Django 3 with MVT (Model-View-Template) architecture and CVBs (Class-Based-Views). The app is a community for fans of outer space. Users can create groups on various topics (eg. SpaceX, NASA, Pluto, etc.). Users can then create posts in the groups; they can also leave and join other groups. New users are able to signup, and can link user profiles with the @ symbol.
 
-Hosted example:
+Hosted example: https://star-social-django-fullstack.herokuapp.com/
 
 ### Install
 
